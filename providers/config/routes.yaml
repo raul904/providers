@@ -1,0 +1,18 @@
+index:
+    path: /providers
+    controller: App\Controller\ProviderController::index
+
+create_provider:
+  path: /provider/create
+  controller: App\Controller\ProviderController::create
+  methods: [GET,POST]
+
+edit_provider:
+  path: /provider/edit/{id}
+  controller: App\Controller\ProviderController::edit
+  methods: [GET,POST]
+
+delete_provider:
+  path: /provider/delete/{id}
+  controller: App\Controller\ProviderController::delete
+  methods: [POST]
